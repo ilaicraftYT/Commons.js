@@ -4,6 +4,9 @@
  * This function will get a random item/value of an array.
  * @param {Array} array  An array, where CommonsJS will get the random item.
  * @returns {Array} Note, that if a empty array is given, null will be returned.
+ * @example
+ * const array = ["cool", "ur", "lib", "my"]
+ * getRandomFromArray(array)
  */
 function getRandomFromArray(array){
     if(typeof array == undefined) throw new TypeError("Array wasn't provided.")
@@ -19,7 +22,9 @@ function getRandomFromArray(array){
  * Clones an array.
  * @param {Array} array The array to clone
  * @returns {Array} The same array as the provided
- * @execa
+ * @example
+ * const array = [ "hello!", 2, true]
+ * cloneArray(array)
  */
 function cloneArray(array){
     // eslint-disable-next-line valid-typeof
